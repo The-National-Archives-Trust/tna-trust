@@ -1,0 +1,467 @@
+
+
+/*!
+ * The National Archives Trust CSS
+ * Toolkit URI: https://github.com/nationalarchives/tna-frontend-toolkit
+ * Author URI: https://github.com/nationalarchivestrust
+ * Version: 1.0
+ * License: GNU General Public License
+ */
+ body{
+
+  font-family: 'Roboto', sans-serif;
+  color: #26262a;
+}
+
+h1{
+  line-height: 1.2em;
+}
+a:link, a:visited, a:active{
+  color: #3344dd;
+  text-decoration: none;
+  background-color: transparent; }
+  a:hover {
+    color: #884488;
+    text-decoration: underline; }
+.trust-nav ul,.trust-nav-expand ul, .trust-sub-nav ul, .tna-page__sidebar ul{
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+}
+
+.logo {
+ margin-top:15px;
+ margin-bottom:15px;
+ max-width: 150px;
+ height: auto;
+   -webkit-transition: -moz-transform 120ms ease-out; 
+   -moz-transition: -webkit-transform 120ms ease-out; 
+   -o-transition: -o-transform 120ms ease-out; 
+    transition: transform 120ms ease-out; 
+}
+
+.hero{
+  width:100%;
+  background-color: #ccc;
+  min-height:360px;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size: cover;
+
+}
+.hero-overlay{
+	width:100%;
+	min-height: 360px;
+	background-color: rgba(0,0,0,0.4);
+}
+.hero h1, .hero p, .hero-title{
+	color:#fff;
+}
+
+.trust-nav{
+display: none;
+
+}
+
+.trust-nav-expand{
+  width: 100%;
+  display:block;
+  position: relative;
+
+}
+.trust-nav-expand ul{
+  margin: 0;
+  padding: 0;
+}
+
+.trust-nav-expand li{
+  margin-left: 0;
+  display: block;
+  margin-bottom: 0em;
+
+
+}
+.trust-nav-bars{
+  display: block;
+  position: relative;
+  top:1.3em;
+  cursor: pointer;
+}
+
+
+.trust-nav-expand a:link, .trust-nav-expand a:active, .trust-nav-expand a:visited, .trust-nav-expand a:focus{
+  width:100%;
+  height:auto;
+  padding:15px;
+  color:#26262a;
+  text-decoration:none;
+  display:inline-block;
+  border-bottom:1px solid #dddddd;
+  background-color:#eeeeee;
+
+}
+.trust-nav-expand a:hover{
+  width:100%;
+  height:auto;
+  padding:15px;
+  color:#26262a;
+  text-decoration:none;
+  border-bottom:1px solid #dddddd;
+  display:inline-block;
+  background-color:#dddddd;
+  webkit-transition: background-color 120ms linear;
+  -moz-transition: background-color 120ms linear;
+  -o-transition: background-color 120ms linear;
+  -ms-transition: background-color 120ms linear;
+  transition: background-color 120ms linear;
+}
+.trust-nav-expand-current{
+
+  background-color:#dddddd !important;
+   border-bottom:1px solid #26262a !important;
+}
+
+.trust-nav-expand .support-link{
+  background-color: #26262a !important;
+  color:#fff !important;
+  border-bottom: 1px solid #26262a;
+}
+
+
+footer{
+
+  background-color: #26262a;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+}
+footer a:link{
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover, footer a:active, footer a:visited{
+  color: #fff;
+  text-decoration: underline;
+}  
+
+footer .square-logo {
+  max-width: 120px;
+  margin-bottom: 15px;
+}
+footer .seperator{
+  border-top: 2px solid #fff;
+  padding-top: 15px;
+}
+/** alignment adjustments for mobile**/
+
+.align-right,.align-left,.align-center{
+  text-align: center;
+}
+
+a.cta, .call-out a, .tna-card a h3{
+  color: #26262a;
+  text-decoration: none;
+  border-bottom: 2px solid #26262a;
+  padding-bottom: 2px;
+  display: inline-block;
+  padding:5px;
+  webkit-transition: background-color 120ms linear;
+  -moz-transition: background-color 120ms linear;
+  -o-transition: background-color 120ms linear;
+  -ms-transition: background-color 120ms linear;
+  transition: background-color 120ms linear;
+    text-decoration: none !important;
+}
+a.cta:hover, .call-out a:hover, .tna-card a h3:hover{
+
+  border-bottom: 2px solid #26262a;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: #26262a;
+  color: #fff !important;
+  padding:5px;
+  text-decoration: none !important;
+}
+.tna-icon--bg-green{
+  background-color: #dde5d5;
+}
+.tna-icon--bl-video {
+  background-image: url("../img/icon-bl-video.png"); }
+  .tna-icon{
+    cursor: pointer;
+  }
+  .tna-icon:hover{
+    background-color: #555;
+    webkit-transition: background-color 120ms linear;
+    -moz-transition: background-color 120ms linear;
+    -o-transition: background-color 120ms linear;
+    -ms-transition: background-color 120ms linear;
+    transition: background-color 120ms linear;
+  }
+
+  .trust-sub-nav{
+    width:100%;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 15px;
+       border-top:1px solid #ddd;
+  }
+
+  .trust-sub-nav ul li{
+    width: 100%;
+    display: inline-block;
+    margin:0px;
+    padding:0px;
+  }
+
+
+  .trust-nav{
+    margin-top:15px;
+    margin-bottom:15px;
+    text-align: right;
+    position: relative;
+    top:1.2em;
+  }
+
+  .trust-nav a:link, .trust-nav a:active, .trust-nav a:visited, .trust-nav a:focus, .trust-sub-nav a:link, .trust-sub-nav a:active, .trust-sub-nav a:visited, .trust-sub-nav a:focus{
+
+    color:#26262a;
+    text-decoration:none;
+border-bottom:2px solid #fff;
+    padding: 0.2em 0.5em;
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+    
+  }
+  .trust-nav a:hover, .current, .trust-sub-nav a:hover{
+
+    color:#26262a;
+    text-decoration:none;
+    background-color: #fff;
+    border-bottom:2px solid #26262a !important;
+    padding: 0.2em 0.5em;
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+  
+}
+
+  .trust-sub-nav ul li{
+    width: auto;
+    display: block;
+    padding-top:5px;
+  }
+
+
+  .img-border, .tna-page__entry img{
+
+    border:1px solid #26262a;
+  }
+  .clear-both{
+    clear:both;
+    height: 30px;
+  }
+  .no-padding{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+.col-sm-4, .col-xs-12, .col-sm-8 {
+
+    flex: 100%;
+    max-width: 100%;
+
+}
+
+
+/** alignments**/
+
+.alignright {
+  max-width: 320px;
+  height: auto;
+  float:none;
+ margin-right: auto;
+  margin-left: auto;
+display: block;
+}
+
+.tna-page__sidebar a:link, .tna-page__sidebar a:active, .tna-page__sidebar a:focus, .tna-page__sidebar a:visited {
+  color: #26262a;
+  text-decoration: none;
+
+}
+.tna-page__sidebar a:hover{
+  color: #26262a;
+  text-decoration: underline;
+
+}
+
+.col-11 {
+
+    flex: 0 0 91.6666666667%;
+    max-width: 90.6666666667%;
+
+}
+.label {
+  display: inline-block;
+width:auto;
+max-width: auto;
+    height: auto;
+    font-size: 0.9em;
+    color: #26262a;
+    padding: 5px;
+
+
+}
+/** comment this out when there's a video**/
+    .hero-title-home{
+      margin-top: 9em;
+
+    }
+
+/* cards */
+
+.tna-card__image__portrait{
+
+min-height:520px;
+background-position: top center;
+border:1px solid #26262a;
+  }
+
+    @media only screen and (min-width: 480px) and (max-width: 768px){
+
+      .tna-card__image__portrait{
+
+min-height:720px;
+background-position: top center;
+border:1px solid #26262a;
+  }
+    }
+  @media only screen and (min-width: 769px)  {
+
+
+
+.alignright {
+  max-width: 400px;
+  height: auto;
+  float:right;
+margin-left: 15px;
+margin-right:15px;
+}
+.col-xs-12, .col-sm-8{
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+}
+    .col-sm-4 {
+
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+
+}
+  .col-1, .col-11,.col-12, .col-xs-12, .col-sm-8{
+    padding-left:5px;
+    padding-right:15px;
+  }
+    .no-padding{
+      padding:0px;
+    }
+    .trust-nav{
+      display: block;
+
+    }
+
+    /** hero styles **/
+
+    .hero, .hero-overlay{
+  min-height:480px;
+}
+
+    .hero-title{
+      margin-top: 11em;
+      border-left: 3px solid #fff;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  margin-left: 15px;
+    }
+
+    .hero-title-home{
+      margin-top: 10em;
+      border-left: 3px solid #fff;
+  padding-left: 15px;
+
+    }
+
+    .hero-highlight{
+      padding-top: 10em;
+
+    }
+
+    /** positioning adjustment for call-out box **/
+    .call-out{
+
+      position: relative;
+      top:-7em;
+      margin-bottom: -7em;
+    }
+
+    /** alignments **/  
+
+    .align-right{
+      text-align: right;
+    }
+    .align-left{
+      text-align: left;
+    }
+    /** navigation **/
+
+    .trust-nav-expand,.trust-nav-bars{
+      display: none;
+    }
+    .trust-nav li{
+      margin-left: .1em;
+      display: inline-block;
+    }
+   .trust-nav a.tna-button, .trust-nav a.tna-button:active, .trust-nav a.tna-button:visited{
+      color: #fff ;
+          border-bottom:2px solid #26262a;
+          background-color:#26262a ;
+    }
+    .trust-nav a.tna-button:hover{
+      color: #26262a;
+          border-bottom:2px solid #26262a;
+          background-color:#fff;
+    }
+
+    .trust-sub-nav ul li{
+      display: inline-block;
+      padding-top:0px;
+    }
+
+        .trust-nav a:link, .trust-nav a:active, .trust-nav a:visited, .trust-nav a:focus,.trust-nav a:hover{
+
+    
+
+    padding: 0em 0.3em;
+
+
+   }
+  }
+
+  @media only screen and (min-width: 1200px)  {
+
+    .logo {
+ margin-top:15px;
+ margin-bottom:15px;
+ max-width: 200px;
+ height: auto;
+   -webkit-transition: -moz-transform 120ms ease-out; 
+   -moz-transition: -webkit-transform 120ms ease-out; 
+   -o-transition: -o-transform 120ms ease-out; 
+    transition: transform 120ms ease-out; 
+}
+    .trust-nav a:link, .trust-nav a:active, .trust-nav a:visited, .trust-nav a:focus,.trust-nav a:hover{
+
+     padding: 0.2em 0.9em;
+   }
+ }
